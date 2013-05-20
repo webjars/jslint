@@ -10,47 +10,40 @@
 
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
-    <artifactId>WEBJAR_ID</artifactId>
-    <version>UPSTREAM_VERSION-SNAPSHOT</version>
-    <name>WEBJAR_NAME</name>
-    <description>WebJar for WEBJAR_NAME</description>
+    <artifactId>jslint</artifactId>
+    <version>1d8c1f8f74-SNAPSHOT</version>
+    <name>JSLint</name>
+    <description>WebJar for JSLint</description>
     <url>http://webjars.org</url>
 
     <developers>
         <developer>
-            <id>YOUR_ID</id>
-            <name>YOUR_NAME</name>
-            <email>YOUR_EMAIL</email>
+            <id>jamesward</id>
+            <name>James Ward</name>
+            <email>james@jamesward.com</email>
         </developer>
     </developers>
 
     <licenses>
         <license>
-            <name>UPSTREAM_LICENSE_NAME</name>
-            <url>UPSTREAM_LICENSE_VERSION</url>
+            <name>Copyright (c) 2002 Douglas Crockford</name>
+            <url>https://github.com/douglascrockford/JSLint/blob/master/jslint.js</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
     <scm>
-        <url>http://github.com/webjars/WEBJAR_ID</url>
-        <connection>scm:git:https://github.com/webjars/WEBJAR_ID.git</connection>
-        <developerConnection>scm:git:https://github.com/webjars/WEBJAR_ID.git</developerConnection>
+        <url>http://github.com/webjars/jslint</url>
+        <connection>scm:git:https://github.com/webjars/jslint.git</connection>
+        <developerConnection>scm:git:https://github.com/webjars/jslint.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     
-    <dependencies>
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>ANOTHER_WEBJAR_ID</artifactId>
-            <version>ANOTHER_WEBJAR_VERSION</version>
-        </dependency>
-    </dependencies>
-    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>UPSTREAM_VERSION</upstream.version>
-        <upstream.url>UPSTREAM_URL</upstream.url>
+        <upstream.version>1d8c1f8f74</upstream.version>
+        <upstream.commit>1d8c1f8f7410b505ccbb039a74025cd75a926ce3</upstream.commit>
+        <upstream.url>https://raw.github.com/douglascrockford/JSLint/${upstream.commit}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
     
@@ -69,19 +62,7 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>WEBJAR_ID.js</fromFile>
-                            <toDir>${destDir}</toDir>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>download-min-js</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>download-single</goal>
-                        </goals>
-                        <configuration>
-                            <url>${upstream.url}</url>
-                            <fromFile>WEBJAR_ID.min.js</fromFile>
+                            <fromFile>jslint.js</fromFile>
                             <toDir>${destDir}</toDir>
                         </configuration>
                     </execution>
@@ -94,12 +75,6 @@
                 <version>2.3.2</version>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>${project.basedir}/src/main/resources</directory>
-                <targetPath>${destDir}</targetPath>
-            </resource>
-        </resources>
     </build>
 
 </project>
