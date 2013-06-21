@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jslint</artifactId>
-    <version>c657984cd7</version>
+    <version>0.0-SNAPSHOT</version>
     <name>JSLint</name>
     <description>WebJar for JSLint</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/jslint</url>
         <connection>scm:git:https://github.com/webjars/jslint.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jslint.git</developerConnection>
-        <tag>jslint-c657984cd7</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <properties>
