@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jslint</artifactId>
-    <version>0.0-SNAPSHOT</version>
+    <version>20140708-394bf29-SNAPSHOT</version>
     <name>JSLint</name>
     <description>WebJar for JSLint</description>
     <url>http://webjars.org</url>
@@ -41,8 +41,8 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>c657984cd7</upstream.version>
-        <upstream.commit>c657984cd7dfc17277feadb86d1de24c664f944a</upstream.commit>
+        <upstream.version>20140708-394bf29</upstream.version>
+        <upstream.commit>394bf291bfa3881bb9827b9fc7b7d1112d83f313</upstream.commit>
         <upstream.url>https://raw.github.com/douglascrockford/JSLint/${upstream.commit}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
